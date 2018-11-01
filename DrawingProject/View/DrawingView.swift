@@ -8,24 +8,29 @@
 
 import UIKit
 
-public class DrawingView: UIView -> Void
+public class DrawingView: UIView
 {
 
-    /*
+    
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect)
+    public override func draw(_ rect: CGRect) -> Void
     {
         // Drawing code
+        createStickFigure().stroke()
+        drawTurtle()
+        drawSquare()
     }
-    */
+    
 
     
     private func createStickFigure() -> UIBezierPath
     {
         let figure : UIBezierPath = UIBezierPath()
         
-        UIColor.magenta.setStroke()
+        UIColor.white.setStroke()
+        figure.lineWidth = 3.0
+        
         figure.addArc(withCenter: CGPoint(x: 200, y: 200),
                       radius: CGFloat(20),
                       startAngle: CGFloat(0),
@@ -43,6 +48,39 @@ public class DrawingView: UIView -> Void
         
         return figure
     }
+    
+    private func drawTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint(x: 50, y: 250))
+        logo.addLine(to: CGPoint (x: 100, y: 300))
+        logo.addLine(to: CGPoint(x: 50, y: 350))
+        
+        logo.close()
+        logo.fill()
+    }
+    
+    private func drawSquare() -> Void
+    {
+        let squ = UIBezierPath()
+        UIColor.white.setFill()
+        squ.move(to: CGPoint(x: 350, y: 100))
+        squ.addLine(to: CGPoint(x: 250, y: 100))
+        squ.addLine(to: CGPoint(x: 250, y: 200))
+        squ.addLine(to: CGPoint(x: 350, y: 200))
+        squ.addLine(to: CGPoint(x: 350, y: 100))
+        
+        squ.close()
+        squ.fill()
+        
+    }
+    
+    
+    
+    
+    
+    
     
     
 }
