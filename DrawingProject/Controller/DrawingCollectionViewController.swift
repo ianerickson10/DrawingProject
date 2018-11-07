@@ -120,7 +120,17 @@ public class DrawingCollectionViewController: UICollectionViewController
         return sectionInserts.left
     }
     
-    
+    public override func collectionView(_ collectionView: UICollectionView,
+                                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueResuableCell(withReuseidentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .blue
+        artCell.artImage.image = creativeCS[indexPath.row]
+        artCell.artLabel.text = labels[indexPath.row]
+        
+        return artCell
+    }
     
     
     
