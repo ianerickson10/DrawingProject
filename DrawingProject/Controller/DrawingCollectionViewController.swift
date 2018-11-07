@@ -72,20 +72,18 @@ public class DrawingCollectionViewController: UICollectionViewController
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int
+    public override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return creativeCS.count
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
@@ -96,6 +94,38 @@ public class DrawingCollectionViewController: UICollectionViewController
 
     // MARK: UICollectionViewDelegate
 
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        
+        let paddingSpace = sectionInserts.left * (itemsPerRowCompact + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthperItem = availableWidth / itemsPerRowCompact
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewlayout: UICollectionViewLayout,
+                               insertForSectionAt section: Int) -> UIEdgeInserts
+    {
+        return sectionInserts
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        return sectionInserts.left
+    }
+    
+    
+    
+    
+    
+    
+    
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool
