@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A2100C4219371ED00BED9C7 /* DrawingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2100C3219371ED00BED9C7 /* DrawingCollectionViewController.swift */; };
+		7A2100C62193817900BED9C7 /* DrawingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2100C52193817900BED9C7 /* DrawingCell.swift */; };
 		7A8E6FC5218B732700792CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E6FC4218B732700792CE4 /* AppDelegate.swift */; };
 		7A8E6FC7218B732700792CE4 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E6FC6218B732700792CE4 /* DrawingViewController.swift */; };
 		7A8E6FCA218B732700792CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E6FC8218B732700792CE4 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7A2100C3219371ED00BED9C7 /* DrawingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCollectionViewController.swift; sourceTree = "<group>"; };
+		7A2100C52193817900BED9C7 /* DrawingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCell.swift; sourceTree = "<group>"; };
 		7A8E6FC1218B732700792CE4 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8E6FC4218B732700792CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8E6FC6218B732700792CE4 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				7A8E6FC8218B732700792CE4 /* Main.storyboard */,
 				7A8E6FCD218B732A00792CE4 /* LaunchScreen.storyboard */,
 				7A8E6FD9218B7D1800792CE4 /* DrawingView.swift */,
+				7A2100C52193817900BED9C7 /* DrawingCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				7A8E6FDA218B7D1800792CE4 /* DrawingView.swift in Sources */,
 				7A8E6FC7218B732700792CE4 /* DrawingViewController.swift in Sources */,
 				7A8E6FC5218B732700792CE4 /* AppDelegate.swift in Sources */,
+				7A2100C62193817900BED9C7 /* DrawingCell.swift in Sources */,
 				7A2100C4219371ED00BED9C7 /* DrawingCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
