@@ -13,6 +13,40 @@ private let reuseIdentifier = "artidentifier"
 public class DrawingCollectionViewController: UICollectionViewController
 {
 
+    // MARK: Data Members For Creativity Screen
+    
+    private let sectionInserts = UIEdgeInserts(top: 50.0, left: 20.0, bottom 50.0, right 20.0)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] =
+    {
+        return [
+            UIImage(named:"IanEricksonJavaHaiku"),
+            UIImage(named:"IanEricksonSwiftHaiku"),
+            UIImage(named:"IanEricksonMainframeHaiku"),
+            UIImage(named:"Challenger"),
+            UIImage(named:"Mountain"),
+            UIImage(named:"Sun"),
+            UIImage(named:"ScreenArt")
+        ]
+    }()
+    
+    private let labels : [String] =
+    {
+        return [
+            "Java Haiku",
+            "Swift Haiku",
+            "Mainframe Haiku",
+            "Challenger",
+            "Sunny mountain through grass",
+            "Sun through an arch",
+            "My lame screen art"
+        ]
+    }()
+    
+    
+
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
@@ -24,12 +58,6 @@ public class DrawingCollectionViewController: UICollectionViewController
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     /*
