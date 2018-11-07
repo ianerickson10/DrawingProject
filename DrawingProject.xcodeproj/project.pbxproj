@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2100C4219371ED00BED9C7 /* DrawingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2100C3219371ED00BED9C7 /* DrawingCollectionViewController.swift */; };
 		7A8E6FC5218B732700792CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E6FC4218B732700792CE4 /* AppDelegate.swift */; };
 		7A8E6FC7218B732700792CE4 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E6FC6218B732700792CE4 /* DrawingViewController.swift */; };
 		7A8E6FCA218B732700792CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E6FC8218B732700792CE4 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A2100C3219371ED00BED9C7 /* DrawingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCollectionViewController.swift; sourceTree = "<group>"; };
 		7A8E6FC1218B732700792CE4 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8E6FC4218B732700792CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8E6FC6218B732700792CE4 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				7A8E6FC6218B732700792CE4 /* DrawingViewController.swift */,
+				7A2100C3219371ED00BED9C7 /* DrawingCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				7A8E6FDA218B7D1800792CE4 /* DrawingView.swift in Sources */,
 				7A8E6FC7218B732700792CE4 /* DrawingViewController.swift in Sources */,
 				7A8E6FC5218B732700792CE4 /* AppDelegate.swift in Sources */,
+				7A2100C4219371ED00BED9C7 /* DrawingCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

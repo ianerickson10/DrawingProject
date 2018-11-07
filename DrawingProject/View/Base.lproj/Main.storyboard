@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="117.39130434782609" y="118.20652173913044"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Drawing Collection View Controller-->
         <scene sceneID="eiU-rc-jUr">
             <objects>
-                <collectionViewController id="CJH-yA-onJ" sceneMemberID="viewController">
+                <collectionViewController id="CJH-yA-onJ" customClass="DrawingCollectionViewController" customModule="DrawingProject" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="lI9-QJ-F7M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="l9B-li-C19">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artidentifier" id="l9B-li-C19">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
