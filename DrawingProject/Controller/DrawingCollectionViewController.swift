@@ -15,7 +15,7 @@ public class DrawingCollectionViewController: UICollectionViewController
 
     // MARK: Data Members For Creativity Screen
     
-    private let sectionInserts = UIEdgeInserts(top: 50.0, left: 20.0, bottom 50.0, right 20.0)
+    private let sectionInserts = UIEdgeInserts(top: 50.0, left: 20.0, bottom, 50.0, right, 20.0)
     private let itemsPerRowCompact : CGFloat = 4
     private let itemsPerRowNormal : CGFloat = 6
     
@@ -103,7 +103,7 @@ public class DrawingCollectionViewController: UICollectionViewController
         let availableWidth = view.frame.width - paddingSpace
         let widthperItem = availableWidth / itemsPerRowCompact
         
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        return CGSize(width: widthperItem, height: widthperItem)
     }
     
     public func collectionView(_ collectionView: UICollectionView,
