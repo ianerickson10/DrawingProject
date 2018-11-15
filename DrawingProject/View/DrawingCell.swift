@@ -10,7 +10,7 @@ import UIKit
 
 public class DrawingCell: UICollectionViewCell
 {
-    @IBOutlet weak var artImage: artImage!
+    @IBOutlet weak var artImage: UIImageView!
     
-    @IBOutlet weak var artLabel: artLabel!
+    @IBOutlet weak var artLabel: UILabel!
 }

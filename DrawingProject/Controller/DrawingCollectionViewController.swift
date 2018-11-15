@@ -15,7 +15,7 @@ public class DrawingCollectionViewController: UICollectionViewController
 
     // MARK: Data Members For Creativity Screen
     
-    private let sectionInserts = UIEdgeInserts(top: 50.0, left: 20.0, bottom, 50.0, right, 20.0)
+    private let sectionInserts = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     private let itemsPerRowCompact : CGFloat = 4
     private let itemsPerRowNormal : CGFloat = 6
     
@@ -83,15 +83,6 @@ public class DrawingCollectionViewController: UICollectionViewController
         return creativeCS.count
     }
 
-    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
-        return cell
-    }
-
     // MARK: UICollectionViewDelegate
 
     public func collectionView(_ collectionView: UICollectionView,
@@ -101,14 +92,14 @@ public class DrawingCollectionViewController: UICollectionViewController
         
         let paddingSpace = sectionInserts.left * (itemsPerRowCompact + 1)
         let availableWidth = view.frame.width - paddingSpace
-        let widthperItem = availableWidth / itemsPerRowCompact
+        let widthPerItem = availableWidth / itemsPerRowCompact
         
-        return CGSize(width: widthperItem, height: widthperItem)
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
     
     public func collectionView(_ collectionView: UICollectionView,
                                layout collectionViewlayout: UICollectionViewLayout,
-                               insertForSectionAt section: Int) -> UIEdgeInserts
+                               insertForSectionAt section: Int) -> UIEdgeInsets
     {
         return sectionInserts
     }
@@ -123,7 +114,7 @@ public class DrawingCollectionViewController: UICollectionViewController
     public override func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueResuableCell(withReuseidentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! DrawingCell
         
         artCell.backgroundColor = .blue
         artCell.artImage.image = creativeCS[indexPath.row]
@@ -132,9 +123,25 @@ public class DrawingCollectionViewController: UICollectionViewController
         return artCell
     }
     
+    public override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        let imageView = UIImageView(image: creativeCS[indexPath.row])
+        imageView.frame = self.view.frame
+        imageView.backgroundColor = .black
+        imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        imageView.addGestureRecognizer(tap)
+        
+        self.view.addSubview(imageView)
+    }
     
-    
-    
+    @objc
+    private func dismissFullscreenImage(_ sender: UITapGestureRecognizer)
+    {
+        sender.view?.removeFromSuperview()
+    }
     
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking

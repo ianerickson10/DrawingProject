@@ -63,11 +63,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-3F-NB8" customClass="artImage">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iC9-3F-NB8">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqn-Tr-tT3" customClass="artLabel">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqn-Tr-tT3">
                                             <rect key="frame" x="61" y="209" width="79" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -79,8 +79,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="UIlabel" destination="Lqn-Tr-tT3" id="mhc-TC-4V1"/>
-                                    <outlet property="artImage" destination="iC9-3F-NB8" id="c5h-cg-G3c"/>
-                                    <outlet property="artLabel" destination="Lqn-Tr-tT3" id="HfF-KN-hfQ"/>
+                                    <outlet property="artImage" destination="iC9-3F-NB8" id="6Zq-2k-Ng0"/>
+                                    <outlet property="artLabel" destination="Lqn-Tr-tT3" id="ghO-Dh-hiK"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
