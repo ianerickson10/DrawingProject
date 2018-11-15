@@ -68,7 +68,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lqn-Tr-tT3">
-                                            <rect key="frame" x="61" y="209" width="79" height="29"/>
+                                            <rect key="frame" x="7" y="209" width="185" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -78,9 +78,8 @@
                                 </view>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="UIlabel" destination="Lqn-Tr-tT3" id="mhc-TC-4V1"/>
-                                    <outlet property="artImage" destination="iC9-3F-NB8" id="6Zq-2k-Ng0"/>
-                                    <outlet property="artLabel" destination="Lqn-Tr-tT3" id="ghO-Dh-hiK"/>
+                                    <outlet property="artImage" destination="iC9-3F-NB8" id="hwy-Az-TKs"/>
+                                    <outlet property="artLabel" destination="Lqn-Tr-tT3" id="tTZ-0F-XBC"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
